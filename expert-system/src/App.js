@@ -7,13 +7,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 
-
 export default function App() {
 
-  const [occurance, setOccurance] = useState("1");
   let h = window.innerHeight;
   let styles = useStyles();
+
+  const [occurance, setOccurance] = useState("");
+  const [noTime, setNoTime] = useState("");
+  const [reason, setReason] = useState("");
+  const [duration, setDuration] = useState("");
+
   console.log(occurance)
+
   return (
     <div className="App">
       <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>
@@ -24,22 +29,71 @@ export default function App() {
         </div>
         <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: h }}>
           <Paper elevation={5} className={styles.paper}>
-            <Typography variant="h6" align='left' style={{ color: 'black', padding: 10 }}>QUESTION 1</Typography>
-            <Typography variant="h5" align='left' style={{ color: 'black', padding: 10, fontWeight: 'bold' }}>How many times a week do you want to work out?</Typography>
+            <Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 1</Typography>
+            <Typography variant="h5" align='left' className={styles.question}>How many times a week do you want to work out?</Typography>
             <div >
               <div className="inputGroup">
-                <input onClick={() => setOccurance("1-2")} id="radio1" name="radio" type="radio" />
-                <label htmlFor="radio1" className="buttonText">1-2</label>
+                <input onClick={() => setOccurance("1-2")} id="radio11" name="radio1" type="radio" />
+                <label htmlFor="radio11" className="buttonText">1-2</label>
               </div>
               <div className="inputGroup">
-                <input onClick={() => setOccurance("3-4")} id="radio2" name="radio" type="radio" />
-                <label htmlFor="radio2" className="buttonText">3-4</label>
+                <input onClick={() => setOccurance("3-4")} id="radio12" name="radio1" type="radio" />
+                <label htmlFor="radio12" className="buttonText">3-4</label>
               </div>
               <div className="inputGroup">
-                <input onClick={() => setOccurance("5+")} id="radio3" name="radio" type="radio" />
-                <label htmlFor="radio3" className="buttonText">5+</label>
+                <input onClick={() => setOccurance("5+")} id="radio13" name="radio1" type="radio" />
+                <label htmlFor="radio13" className="buttonText">5+</label>
               </div>
             </div>
+            <Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 2</Typography>
+            <Typography variant="h5" align='left' className={styles.question}>When is the worst time for you for sport activities?</Typography>
+            <div >
+              <div className="inputGroup">
+                <input onClick={() => setNoTime("morning")} id="radio21" name="radio2" type="radio" />
+                <label htmlFor="radio21" className="buttonText">morning</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setNoTime("afternoon")} id="radio22" name="radio2" type="radio" />
+                <label htmlFor="radio22" className="buttonText">afternoon</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setNoTime("evening")} id="radio23" name="radio2" type="radio" />
+                <label htmlFor="radio23" className="buttonText">evening</label>
+              </div>
+            </div>
+            <Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 3</Typography>
+            <Typography variant="h5" align='left' className={styles.question}>Why do you want to work out?</Typography>
+            <div >
+              <div className="inputGroup">
+                <input onClick={() => setReason("sleep better")} id="radio31" name="radio3" type="radio" />
+                <label htmlFor="radio31" className="buttonText">sleep better</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setReason("training")} id="radio32" name="radio3" type="radio" />
+                <label htmlFor="radio32" className="buttonText">training</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setReason("enjoyment")} id="radio33" name="radio3" type="radio" />
+                <label htmlFor="radio33" className="buttonText">enjoyment</label>
+              </div>
+            </div>
+            <Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 4</Typography>
+            <Typography variant="h5" align='left' className={styles.question}>How much time would want to spend?</Typography>
+            <div >
+              <div className="inputGroup">
+                <input onClick={() => setOccurance("short")} id="radio41" name="radio4" type="radio" />
+                <label htmlFor="radio41" className="buttonText">short 30 min</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setOccurance("medium")} id="radio42" name="radio4" type="radio" />
+                <label htmlFor="radio42" className="buttonText">medium 1h</label>
+              </div>
+              <div className="inputGroup">
+                <input onClick={() => setOccurance("long")} id="radio43" name="radio4" type="radio" />
+                <label htmlFor="radio43" className="buttonText">long 2h</label>
+              </div>
+            </div>
+            <Button variant="contained" disableFocusRipple className={styles.submitButton}>Submit</Button>
           </Paper>
         </Container>
       </div>
@@ -91,6 +145,29 @@ const useStyles = makeStyles({
     color: 'white',
     margin: 15,
     borderRadius: 15,
+  },
+  questionNumber: {
+    color: 'black',
+    padding: 10,
+    marginTop: '3%'
+  },
+  question: {
+    color: 'black',
+    padding: 10,
+    fontWeight: 'bold'
+  },
+  submitButton: {
+    color: '#FFF',
+    backgroundColor: "#7acc8c",
+    borderRadius: 20,
+    fontSize: '1.5rem',
+    fontWeight: 700,
+    marginTop: "5%",
+    width: "30%",
+    '&:hover': {
+      backgroundColor: "#7acc8c",
+      color: '#FFF'
+    }
   }
 });
 
