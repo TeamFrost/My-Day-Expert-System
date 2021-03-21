@@ -1,5 +1,5 @@
 import './App.css';
-// import './es.js';
+import kb from './data/activities.js';
 import React, { useState } from 'react'
 import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
@@ -8,8 +8,32 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Result from './assets/result.svg';
 
-
 export default function App() {
+
+  const forwardChain = function (assertions) {
+    // Select the first rule.
+    let ruleIndex = 0;
+    let rule = kb[ruleIndex];
+
+    // While there are more rules.
+    while (ruleIndex < kb.length) {
+      // If all premises in the rule are in assertions
+      const allPremisesExist = rule.premises.every(premise =>
+        assertions.some(assertion => assertion.attribute === premise.attribute && assertion.value === premise.value)
+      );
+      // If all premises from the rule are in the assertions but not the conclusion.
+      if (allPremisesExist && !assertions.some(assertion => assertion.attribute === rule.conclusion.attribute && assertion.value === rule.conclusion.value)) {
+        // Add the conclusion to assertions.
+        return rule.conclusion.value;
+      }
+      else {
+        // Select the next rule.
+        rule = kb[++ruleIndex];
+      }
+    }
+    return "Please complete all fields";
+  };
+
 
   let h = window.innerHeight;
   let styles = useStyles();
@@ -21,14 +45,29 @@ export default function App() {
   const [reason, setReason] = useState("");
   const [duration, setDuration] = useState("");
 
-  let assertion = { occurance, noTime, reason, duration };
+  const [conclusion, setConclusion] = useState("");
 
-  // console.log(assertion);
+  let premises = [
+    { attribute: 'category', value: "sport" },
+    { attribute: 'occurance', value: occurance },
+    { attribute: 'no_time', value: noTime },
+    { attribute: 'reason', value: reason },
+    { attribute: 'duration', value: duration }
+  ];
 
-  let handleInfo = () => {
+  const handleInfo = () => {
     setInfo(!info);
   }
-  let handleCompleted = () => {
+  const handleCompleted = () => {
+    setCompleted(!completed);
+    setConclusion(forwardChain(premises));
+  }
+
+  const handleTakeAgain = () => {
+    setOccurance("");
+    setNoTime("");
+    setReason("");
+    setDuration("");
     setCompleted(!completed);
   }
 
@@ -50,12 +89,12 @@ export default function App() {
             null}
         </div>
         <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: h }}>
-          {!completed ?
+          {completed ?
             <Paper elevation={5} className={styles.paper}>
               <img className={styles.image} src={Result} alt="result" />
               <p className={styles.textResult}>Result</p>
-              <Typography variant="h6" className={styles.resultString}>09:00-10:00 Wednesday Friday</Typography>
-              <Button variant="contained" className={styles.retakeButton} onClick={handleCompleted}> Take Again</Button>
+              <Typography variant="h6" className={styles.resultString}>{conclusion}</Typography>
+              <Button variant="contained" className={styles.retakeButton} onClick={handleTakeAgain}> Take Again</Button>
             </Paper>
             :
             <Paper elevation={5} className={styles.paper}>
@@ -103,7 +142,7 @@ export default function App() {
                   <label htmlFor="radio32" className="buttonText">training</label>
                 </div>
                 <div className="inputGroup">
-                  <input onClick={() => setReason("enjoyment")} id="radio33" name="radio3" type="radio" />
+                  <input onClick={() => setReason("enjoy")} id="radio33" name="radio3" type="radio" />
                   <label htmlFor="radio33" className="buttonText">enjoyment</label>
                 </div>
               </div>
