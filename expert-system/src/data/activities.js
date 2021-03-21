@@ -812,4 +812,4 @@ const KB = [
 
 ];
 
-module.exports = KB;
+export default KB;
