@@ -1,12 +1,27 @@
-# Getting Started with Create React App
+# My Day Expert System
+## About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**My Day** is an expert system that determines when you should work out based on your preferences. \
+It was written in JavaScript (React), using a modified forward-chaining algorithm that analyzes 81 rules. 
 
-## Available Scripts
+We went over these different scenarios and hopefully, the results satisfy your inquiry about when is the best time for a workout. This is **not a scientific quiz** and the results are based on our own personal experience and expertise. 
 
-In the project directory, you can run:
 
-### `npm start`
+
+## Installation
+
+Clone the project locally or you can run the following if you have Git installed:
+
+```
+git clone https://github.com/TeamFrost/My-Day-Expert-System.git
+cd My-Day-Expert-System
+```
+In the project directory, you should run:
+
+```
+npm install 
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,30 +29,29 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After running the project, the following will appear at [http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
+**insert photo here**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The system consists of 4 questions with 3 options for answers. The following table shows all the options for questions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Questions  | Option #1 |  Option #2  | Option #3 |
+| ------------- | ------------- | -------------  | ------------- |
+| How many times a week do you want to work out?  | 1-2  | 3-4   | 5+  |
+| When is the worst time for you for sports activities?| morning  | afternoon   | evening  |
+| Why do you want to work out?| sleep better  | training   | enjoyment  |
+| How much time would want to spend?| short 30 min  | medium 1h   | long 2h  |
 
-### `npm run eject`
+You can choose just one option for each question, and after pressing the **SUBMIT** button, the system will show your result based on the preset rules. Each variation of options will result in a different solution. After the result, you can take the quiz again, by pressing the **TAKE AGAIN** button. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+It's important to select your option for all the questions for the quiz to work. Otherwise, it will show the ***Please complete all fields*** message
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Pressing the **INFO** button will provide a paper with some information about the system. It can be toggled off by pressing the button again.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
@@ -65,6 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
