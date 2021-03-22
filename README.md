@@ -80,6 +80,10 @@ The system will take the input from the user (by pressing one of the radio butto
 
 ![Initial System](docs/resultPage.png)
 
+## Thanks
+
+The system was inspired by the forward-chaining algorithm developed by [primaryobjects/knowledgebase](https://github.com/primaryobjects/knowledgebase). We are using a modified version of the algorithm, using a non sequential logic to input the data.
+
 
 ## Learn More
 The system was created using React, following the links, you can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
