@@ -1,4 +1,8 @@
 # My Day Expert System
+![MIT](https://img.shields.io/github/license/commonality/readme-inspector.svg)
+![CONTRI](https://img.shields.io/github/contributors/commonality/readme-inspector.svg)
+![CODE%](https://img.shields.io/github/languages/top/TeamFrost/My-Day-Expert-System)
+
 ## About
 
 **My Day** is an expert system that determines when you should work out based on your preferences. \
@@ -18,7 +22,7 @@ cd My-Day-Expert-System
 ```
 In the project directory, you should run:
 
-```
+```node
 npm install 
 npm start
 ```
@@ -52,12 +56,34 @@ It's important to select your option for all the questions for the quiz to work.
 
 Pressing the **INFO** button will provide a paper with some information about the system. It can be toggled off by pressing the button again.
 
+## Data Structure
+
+The system contains 81 rules in a form of an object with the following fields:
+```Javascript
+{
+    premises: [
+            { attribute: 'category', value: 'sport' },
+            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'no_time', value: 'morning' },
+            { attribute: 'reason', value: 'sleep better' },
+            { attribute: 'duration', value: 'short' }
+        ],
+    conclusion: { attribute: 'result', value: '20:00-20:30 Monday Friday' }
+}, // 1
+```
+The system will take the input from the user (by pressing one of the radio buttons) and will store the values for the relevant attributes (**occurrence, no_time, reason, duration**). After all the fields are completed, the system will output the value for the **result** attribute.
+
+## Screenshots
+
+![Initial System](docs/completedPage.png)
+
+![Initial System](docs/resultPage.png)
+
 
 ## Learn More
+The system was created using React, following the links, you can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn more about React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
