@@ -2,6 +2,7 @@
 ![MIT](https://img.shields.io/github/license/commonality/readme-inspector.svg)
 ![CONTRI](https://img.shields.io/github/contributors/commonality/readme-inspector.svg)
 ![CODE%](https://img.shields.io/github/languages/top/TeamFrost/My-Day-Expert-System)
+![VER%](https://img.shields.io/github/v/release/TeamFrost/My-Day-Expert-System)
 
 ## About
 
