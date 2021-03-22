@@ -33,7 +33,7 @@ You will also see any lint errors in the console.
 
 After running the project, the following will appear at [http://localhost:3000](http://localhost:3000)
 
-**insert photo here**
+![Initial System](docs/initialPage.png)
 
 The system consists of 4 questions with 3 options for answers. The following table shows all the options for questions:
 
