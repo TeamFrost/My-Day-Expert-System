@@ -81,7 +81,7 @@ export default function App() {
           {info ?
             <Paper className={styles.infoPress}>
               <div className={styles.textInfoAlign}>
-                <p className={styles.textInfo}><b>My Day expert system</b> was written in JavaScript, using a backward-chaining algorithm that analyzes 81 rules.</p>
+                <p className={styles.textInfo}><b>My Day expert system</b> was written in JavaScript, using a modified forward-chaining algorithm that analyzes 81 rules.</p>
                 <p className={styles.textInfo}>We went over these different scenarios and hopefully the results satisfy your inquiry about when is the best time for a workout.</p>
                 <p className={styles.textInfo}>Choose between the available options and then press the <b>"Submit"</b> button to get your result.</p>
               </div>
@@ -228,14 +228,14 @@ const useStyles = makeStyles({
   },
   submitButton: {
     color: '#FFF',
-    backgroundColor: "#7acc8c",
+    backgroundColor: "#3DA458",
     borderRadius: 20,
     fontSize: '1.5rem',
     fontWeight: 700,
     marginTop: "3%",
     width: "30%",
     '&:hover': {
-      backgroundColor: "#7acc8c",
+      backgroundColor: "#3DA458AA",
       color: '#FFF'
     },
   },

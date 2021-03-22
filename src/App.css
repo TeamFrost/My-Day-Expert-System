@@ -37,7 +37,7 @@
   height: 10px;
   border-radius: 50%;
   content: "";
-  background-color: #d16654;
+  background-color: #C54A34;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -74,8 +74,8 @@
   opacity: 1;
 }
 .inputGroup input:checked ~ label:after {
-  background-color: #7acc8c;
-  border-color: #7acc8c;
+  background-color: #3DA458;
+  border-color: #3DA458;
 }
 .inputGroup input {
   width: 32px;
