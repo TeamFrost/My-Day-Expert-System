@@ -1,7 +1,7 @@
 # My Day Expert System
-![MIT](https://img.shields.io/github/license/commonality/readme-inspector.svg)
-![CONTRI](https://img.shields.io/github/contributors/commonality/readme-inspector.svg)
-![CODE%](https://img.shields.io/github/languages/top/TeamFrost/My-Day-Expert-System)
+![Initial System1](https://img.shields.io/github/license/commonality/readme-inspector.svg)
+![Initial System1](https://img.shields.io/github/contributors/commonality/readme-inspector.svg)
+
 
 ## About
 
@@ -22,7 +22,7 @@ cd My-Day-Expert-System
 ```
 In the project directory, you should run:
 
-```node
+```node.js
 npm install 
 npm start
 ```
@@ -79,6 +79,9 @@ The system will take the input from the user (by pressing one of the radio butto
 
 ![Initial System](docs/resultPage.png)
 
+## Inspiration
+
+The forward-chaining algorithm was inspired by the [primaryobjects/knowledgebase](https://github.com/primaryobjects/knowledgebase). Our system is using a modified version of that algorithm, without the need to input data sequentially.
 
 ## Learn More
 The system was created using React, following the links, you can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
