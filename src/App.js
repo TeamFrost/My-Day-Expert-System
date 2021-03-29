@@ -10,59 +10,23 @@ import Result from './assets/result.svg';
 
 export default function App() {
 
-	const forwardChain = function (assertions) {
-		// Select the first rule.
-		let ruleIndex = 0;
-		let rule = kb[ruleIndex];
-
-		// While there are more rules.
-		while (ruleIndex < kb.length) {
-			// If all premises in the rule are in assertions
-			const allPremisesExist = rule.premises.every(premise =>
-				assertions.some(assertion => assertion.attribute === premise.attribute && assertion.value === premise.value)
-			);
-			// If all premises from the rule are in the assertions but not the conclusion.
-			if (allPremisesExist && !assertions.some(assertion => assertion.attribute === rule.conclusion.attribute && assertion.value === rule.conclusion.value)) {
-				// Add the conclusion to assertions.
-				return rule.conclusion.value;
-			}
-			else {
-				// Select the next rule.
-				rule = kb[++ruleIndex];
-			}
-		}
-		return "Please complete all fields";
-	};
-
 	const forwardChainPers = assertions => {
 		let results = [];
 
-		const kbLen = kb.length;
-		for (let i = 0; i < kbLen; i++) {
-			let kbPremises = kb[i].premises;
-			let isPremiseCorrect = true;
-			const assertionsLen = assertions.length;
+		kb.forEach(k => {
+			const dataPremises = k.premises;
+			let isCorrect = true;
 
-			// fiecare assetion se regaseste in kbPremises
-			for (let j = 0; j < assertionsLen; j++) {
-				let assertion = assertions[j];
-				let ok = false;
-
-				for (let k = 0; k < kbPremises.length; k++) {
-					if (kbPremises[k].attribute === assertion.attribute && kbPremises[k].value === assertion.value) {
-						ok = true;
-					}
+			assertions.forEach(assertion => {
+				if (dataPremises.findIndex(data => data.attribute === assertion.attribute && data.value === assertion.value) === -1) {
+					isCorrect = false;
 				}
+			})
 
-				if (!ok) {
-					isPremiseCorrect = false;
-				}
+			if (isCorrect) {
+				results.push(k.conclusion.value);
 			}
-
-			if (isPremiseCorrect) {
-				results.push(kb[i].conclusion.value);
-			}
-		}
+		});
 
 		return results;
 	}
@@ -72,15 +36,10 @@ export default function App() {
 	let styles = useStyles();
 	const [info, setInfo] = useState(false);
 	const [completed, setCompleted] = useState(false);
-
-	const [occurance, setOccurance] = useState("");
-	const [noTime, setNoTime] = useState("");
-	const [reason, setReason] = useState("");
-	const [duration, setDuration] = useState("");
 	const [conclusion, setConclusion] = useState("");
 	const [premises, setPremises] = useState([{ attribute: 'category', value: "sport" }]);
 
-	const isPremise = name => premises.findIndex(p => p.attribute === name) != -1;
+	const isPremise = name => premises.findIndex(p => p.attribute === name) !== -1;
 
 	const updatePremises = (attribute, value) => {
 		let exists = false;
@@ -108,14 +67,11 @@ export default function App() {
 		console.log("COMPLETED");
 		console.log(premises)
 		setCompleted(!completed);
-		setConclusion(forwardChain(premises));
+		setConclusion(forwardChainPers(premises));
 	}
 
 	const handleTakeAgain = () => {
-		setOccurance("");
-		setNoTime("");
-		setReason("");
-		setDuration("");
+		setPremises([{ attribute: 'category', value: "sport" }]);
 		setCompleted(!completed);
 	}
 
@@ -150,19 +106,19 @@ export default function App() {
 							<Typography variant="h5" align='left' className={styles.question}>How many times a week do you want to work out?</Typography>
 							<div >
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurence", "1-2")} id="radio11" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurance", "1-2")} id="radio11" name="radio1" type="radio" />
 									<label htmlFor="radio11" className="buttonText">1-2</label>
 								</div>
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurence", "3-4")} id="radio12" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurance", "3-4")} id="radio12" name="radio1" type="radio" />
 									<label htmlFor="radio12" className="buttonText">3-4</label>
 								</div>
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurence", "5+")} id="radio13" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurance", "5+")} id="radio13" name="radio1" type="radio" />
 									<label htmlFor="radio13" className="buttonText">5+</label>
 								</div>
 							</div>
-							{isPremise("occurence") ?
+							{isPremise("occurance") ?
 								<div>
 									<Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 2</Typography>
 									<Typography variant="h5" align='left' className={styles.question}>When is the worst time for you for sport activities?</Typography>
@@ -223,7 +179,6 @@ export default function App() {
 								</div>
 								: null}
 							{isPremise("duration") ? handleCompleted() : null}
-							{/* <Button variant="contained" disableFocusRipple className={styles.submitButton} onClick={handleCompleted}>Submit</Button> */}
 						</Paper>
 					}
 				</Container>
