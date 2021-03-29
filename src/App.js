@@ -45,7 +45,8 @@ export default function App() {
 		let exists = false;
 
 		let newPremises = premises;
-		newPremises.map(p => {
+
+		newPremises.forEach(p => {
 			if (p.attribute === attribute) {
 				p.value = value;
 				exists = true;
