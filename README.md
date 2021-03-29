@@ -14,7 +14,7 @@ We went over these different scenarios and hopefully, the results satisfy your i
 
 ## Prerequisites
 
-Make sure to have (Node)[https://nodejs.org/en/] installed on your computer for our project to work.
+Make sure to have [Node](https://nodejs.org/en/) installed on your computer for our project to work.
 
 ## Installation
 
