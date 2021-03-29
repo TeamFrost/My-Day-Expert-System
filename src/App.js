@@ -107,19 +107,19 @@ export default function App() {
 							<Typography variant="h5" align='left' className={styles.question}>How many times a week do you want to work out?</Typography>
 							<div >
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurance", "1-2")} id="radio11" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurrence", "1-2")} id="radio11" name="radio1" type="radio" />
 									<label htmlFor="radio11" className="buttonText">1-2</label>
 								</div>
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurance", "3-4")} id="radio12" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurrence", "3-4")} id="radio12" name="radio1" type="radio" />
 									<label htmlFor="radio12" className="buttonText">3-4</label>
 								</div>
 								<div className="inputGroup">
-									<input onClick={() => updatePremises("occurance", "5+")} id="radio13" name="radio1" type="radio" />
+									<input onClick={() => updatePremises("occurrence", "5+")} id="radio13" name="radio1" type="radio" />
 									<label htmlFor="radio13" className="buttonText">5+</label>
 								</div>
 							</div>
-							{isPremise("occurance") ?
+							{isPremise("occurrence") ?
 								<div>
 									<Typography variant="h6" align='left' className={styles.questionNumber}>QUESTION 2</Typography>
 									<Typography variant="h5" align='left' className={styles.question}>When is the worst time for you for sport activities?</Typography>
