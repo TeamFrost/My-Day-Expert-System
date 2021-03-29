@@ -2,7 +2,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -12,7 +12,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -22,7 +22,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -32,7 +32,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -42,7 +42,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -52,7 +52,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -62,7 +62,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -72,7 +72,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -82,7 +82,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -92,7 +92,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -102,7 +102,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -112,7 +112,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -122,7 +122,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -132,7 +132,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -142,7 +142,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -152,7 +152,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -162,7 +162,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -172,7 +172,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -182,7 +182,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -192,7 +192,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -202,7 +202,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -212,7 +212,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -222,7 +222,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -232,7 +232,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -242,7 +242,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -252,7 +252,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -262,7 +262,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '1-2' },
+            { attribute: 'occurrence', value: '1-2' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -272,7 +272,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -282,7 +282,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -292,7 +292,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -302,7 +302,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -312,7 +312,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -322,7 +322,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -332,7 +332,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -342,7 +342,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -352,7 +352,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -362,7 +362,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -372,7 +372,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -382,7 +382,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -392,7 +392,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -402,7 +402,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -412,7 +412,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -422,7 +422,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -432,7 +432,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -442,7 +442,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -452,7 +452,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -462,7 +462,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -472,7 +472,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -482,7 +482,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -492,7 +492,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -502,7 +502,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -512,7 +512,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -522,7 +522,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -532,7 +532,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '3-4' },
+            { attribute: 'occurrence', value: '3-4' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -542,7 +542,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -552,7 +552,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -562,7 +562,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -572,7 +572,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -582,7 +582,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -592,7 +592,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -602,7 +602,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -612,7 +612,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -622,7 +622,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'morning' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -632,7 +632,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -642,7 +642,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -652,7 +652,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -662,7 +662,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -672,7 +672,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -682,7 +682,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -692,7 +692,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -702,7 +702,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -712,7 +712,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'afternoon' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
@@ -722,7 +722,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'short' }
@@ -732,7 +732,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'medium' }
@@ -742,7 +742,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'sleep better' },
             { attribute: 'duration', value: 'long' }
@@ -752,7 +752,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'short' }
@@ -762,7 +762,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'medium' }
@@ -772,7 +772,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'training' },
             { attribute: 'duration', value: 'long' }
@@ -782,7 +782,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'short' }
@@ -792,7 +792,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'medium' }
@@ -802,7 +802,7 @@ const KB = [
     {
         premises: [
             { attribute: 'category', value: 'sport' },
-            { attribute: 'occurance', value: '5+' },
+            { attribute: 'occurrence', value: '5+' },
             { attribute: 'no_time', value: 'evening' },
             { attribute: 'reason', value: 'enjoy' },
             { attribute: 'duration', value: 'long' }
